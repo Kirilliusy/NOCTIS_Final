@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина — NOCTIS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/cart-page.css">
+    <script src="js/cart-page.js" defer></script>
+  </head>
+  <body class="cart-page">
+    <div class="page-wrap">
+      <header class="site-header">
+        <div class="site-header__frame">
+          <div class="site-header__row">
+            <a href="index.html" class="logo logo--header">NOCTIS</a>
+            <nav class="nav-main" aria-label="Основная навигация">
+              <div class="nav-main__cluster">
+                <a href="index.html" class="nav-btn">
+                  <span class="nav-btn__label">Главная</span>
+                </a>
+                <a href="catalog.html" class="nav-btn">
+                  <span class="nav-btn__label">Каталог</span>
+                </a>
+                <a href="index.html#about" class="nav-btn">
+                  <span class="nav-btn__label">О нас</span>
+                </a>
+                <a href="index.html#contacts" class="nav-btn nav-btn--contacts">
+                  <span class="nav-btn__label">Контакты</span>
+                </a>
+              </div>
+            </nav>
+            <a href="cart.html" class="cart-btn" aria-current="page" aria-label="Корзина">
+              <span class="cart-btn__icon" aria-hidden="true">
+                <svg class="cart-btn__svg" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6.75 9.45h13.5v12.15a2.25 2.25 0 0 1-2.25 2.25h-9a2.25 2.25 0 0 1-2.25-2.25V9.45Z"
+                    stroke="currentColor"
+                    stroke-width="1.15"
+                    stroke-linejoin="miter"
+                  ></path>
+                  <path
+                    d="M7.65 9.45V7.65c0-2.48 2.02-4.5 4.5-4.5h1.5c2.48 0 4.5 2.02 4.5 4.5v1.8"
+                    stroke="currentColor"
+                    stroke-width="1.15"
+                    stroke-linecap="round"
+                  ></path>
+                  <path d="M8.1 9.45h10.8" stroke="currentColor" stroke-width="1"></path>
+                  <path
+                    d="M10.35 14.85Q13.5 17.55 16.65 14.85"
+                    stroke="currentColor"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                  ></path>
+                </svg>
+              </span>
+              <span class="cart-btn__badge">3</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <main class="page-flow">
+        <header class="cart-page__intro">
+          <h1 class="cart-page__title">КОРЗИНА</h1>
+          <div class="cart-page__title-rule" aria-hidden="true"></div>
+        </header>
+
+        <div class="cart-page__shell">
+          <div class="cart-page__stack" data-cart-root>
+            <ul class="cart-page__lines" aria-label="Товары в корзине">
+              <li class="row cart-line cart-line--layout align-items-center g-0" data-unit-price="45000">
+                <div class="col-12 col-lg-auto cart-line__col-thumb">
+                  <a class="cart-line__thumb" href="product.html">
+                    <img
+                      src="https://www.figma.com/api/mcp/asset/de18950c-e811-4217-a112-b1abf5da224f"
+                      alt="Кольцо Полночь"
+                      width="207"
+                      height="204"
+                      loading="lazy"
+                    >
+                  </a>
+                </div>
+                <div class="col-12 col-lg cart-line__col-info">
+                  <div class="cart-line__info mt-3 mt-lg-0">
+                    <a class="cart-line__title" href="product.html">Кольцо Полночь</a>
+                    <p class="cart-line__meta">Размер: S</p>
+                    <div class="cart-line__price-row">
+                      <p class="cart-line__price">45 000 ₽</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-auto cart-line__col-aside">
+                  <div class="cart-line__actions mt-3 mt-lg-0">
+                    <div class="cart-line__remove-wrap">
+                      <button type="button" class="fig-close cart-line__remove" aria-label="Удалить из корзины"></button>
+                    </div>
+                    <div class="fig-stepper" role="group" aria-label="Количество">
+                      <button type="button" class="fig-stepper__btn" data-step="-1" disabled aria-label="Уменьшить">−</button>
+                      <span class="fig-stepper__value" data-cart-qty>1</span>
+                      <button type="button" class="fig-stepper__btn" data-step="1" aria-label="Увеличить">+</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="row cart-line cart-line--layout align-items-center g-0" data-unit-price="45000">
+                <div class="col-12 col-lg-auto cart-line__col-thumb">
+                  <a class="cart-line__thumb" href="product.html">
+                    <img
+                      src="https://www.figma.com/api/mcp/asset/42b48be1-2076-422c-a731-1694f4c79223"
+                      alt="Серьги Полнолуние"
+                      width="207"
+                      height="204"
+                      loading="lazy"
+                    >
+                  </a>
+                </div>
+                <div class="col-12 col-lg cart-line__col-info">
+                  <div class="cart-line__info mt-3 mt-lg-0">
+                    <a class="cart-line__title" href="product.html">Серьги Полнолуние</a>
+                    <p class="cart-line__meta">Размер: S</p>
+                    <div class="cart-line__price-row">
+                      <p class="cart-line__price">45 000 ₽</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-auto cart-line__col-aside">
+                  <div class="cart-line__actions mt-3 mt-lg-0">
+                    <div class="cart-line__remove-wrap">
+                      <button type="button" class="fig-close cart-line__remove" aria-label="Удалить из корзины"></button>
+                    </div>
+                    <div class="fig-stepper" role="group" aria-label="Количество">
+                      <button type="button" class="fig-stepper__btn" data-step="-1" disabled aria-label="Уменьшить">−</button>
+                      <span class="fig-stepper__value" data-cart-qty>1</span>
+                      <button type="button" class="fig-stepper__btn" data-step="1" aria-label="Увеличить">+</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="row cart-line cart-line--layout align-items-center g-0" data-unit-price="45000">
+                <div class="col-12 col-lg-auto cart-line__col-thumb">
+                  <a class="cart-line__thumb" href="product.html">
+                    <img
+                      src="https://www.figma.com/api/mcp/asset/c9b9c0a5-2ded-47e5-9117-6fb6c7ee4056"
+                      alt="Колье Луна"
+                      width="207"
+                      height="204"
+                      loading="lazy"
+                    >
+                  </a>
+                </div>
+                <div class="col-12 col-lg cart-line__col-info">
+                  <div class="cart-line__info mt-3 mt-lg-0">
+                    <a class="cart-line__title" href="product.html">Колье Луна</a>
+                    <p class="cart-line__meta">Размер: S</p>
+                    <div class="cart-line__price-row">
+                      <p class="cart-line__price">45 000 ₽</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-auto cart-line__col-aside">
+                  <div class="cart-line__actions mt-3 mt-lg-0">
+                    <div class="cart-line__remove-wrap">
+                      <button type="button" class="fig-close cart-line__remove" aria-label="Удалить из корзины"></button>
+                    </div>
+                    <div class="fig-stepper" role="group" aria-label="Количество">
+                      <button type="button" class="fig-stepper__btn" data-step="-1" disabled aria-label="Уменьшить">−</button>
+                      <span class="fig-stepper__value" data-cart-qty>1</span>
+                      <button type="button" class="fig-stepper__btn" data-step="1" aria-label="Увеличить">+</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <section class="cart-summary" aria-labelledby="cart-total-heading">
+              <div class="cart-summary__total-row">
+                <h2 class="cart-summary__label" id="cart-total-heading">ИТОГО:</h2>
+                <p class="cart-summary__amount" data-cart-total>135 000 ₽</p>
+              </div>
+              <button type="button" class="btn btn-outline-light cart-summary__checkout">Оформить покупку</button>
+              <a class="cart-summary__continue" href="catalog.html">ПРОДОЛЖИТЬ ПОКУПКИ</a>
+            </section>
+          </div>
+        </div>
+
+        <footer class="site-footer" id="contacts">
+          <div class="site-footer__shell">
+            <div class="site-footer__main">
+              <div class="site-footer__cols">
+                <div class="site-footer__brand">
+                  <p class="logo logo--footer">NOCTIS</p>
+                  <p class="site-footer__tagline">
+                    Ювелирные изделия тьмы. Откройте для себя коллекцию украшений, созданных в атмосфере готической роскоши.
+                  </p>
+                </div>
+                <div class="site-footer__col site-footer__col--nav">
+                  <h3 class="site-footer__heading site-footer__heading--spaced">Навигация</h3>
+                  <ul class="footer-nav">
+                    <li class="footer-nav__item"><a href="index.html">Главная</a></li>
+                    <li class="footer-nav__item"><a href="catalog.html">Каталог</a></li>
+                    <li class="footer-nav__item"><a href="index.html#about">О бренде</a></li>
+                    <li class="footer-nav__item"><a href="index.html#contacts">Контакты</a></li>
+                  </ul>
+                </div>
+                <div class="site-footer__col site-footer__col--contact">
+                  <h3 class="site-footer__heading site-footer__heading--spaced">Контакты</h3>
+                  <ul class="footer-contact">
+                    <li>Москва, Кузнецкий Мост, 21/5</li>
+                    <li><a href="tel:+74951234567">+7 (495) 123-45-67</a></li>
+                    <li><a href="mailto:contact@noctis.luxury">contact@noctis.luxury</a></li>
+                  </ul>
+                </div>
+                <div class="site-footer__col site-footer__col--news">
+                  <p class="site-footer__newsletter-title">Подпишись на рассылку и получи скидку 10%</p>
+                  <form class="newsletter-form" action="#" method="post">
+                    <label class="newsletter-form__field-label" for="cart-footer-email">Email</label>
+                    <input
+                      class="newsletter-form__input"
+                      type="email"
+                      id="cart-footer-email"
+                      name="email"
+                      autocomplete="email"
+                      aria-label="Email для рассылки"
+                    >
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="site-footer__rule-block">
+              <p class="site-footer__copyright">© 2025 Noctis. Все права защищены.</p>
+            </div>
+          </div>
+        </footer>
+      </main>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
