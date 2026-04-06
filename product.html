@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кольцо Полночь — NOCTIS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/product-page.css">
+  </head>
+  <body class="product-page">
+    <div class="page-wrap">
+      <header class="site-header">
+        <div class="site-header__frame">
+          <div class="site-header__row">
+            <a href="index.html" class="logo logo--header">NOCTIS</a>
+            <nav class="nav-main" aria-label="Основная навигация">
+              <div class="nav-main__cluster">
+                <a href="index.html" class="nav-btn">
+                  <span class="nav-btn__label">Главная</span>
+                </a>
+                <a href="catalog.html" class="nav-btn">
+                  <span class="nav-btn__label">Каталог</span>
+                </a>
+                <a href="index.html#about" class="nav-btn">
+                  <span class="nav-btn__label">О нас</span>
+                </a>
+                <a href="index.html#contacts" class="nav-btn nav-btn--contacts">
+                  <span class="nav-btn__label">Контакты</span>
+                </a>
+              </div>
+            </nav>
+            <a href="cart.html" class="cart-btn" aria-label="Корзина">
+              <span class="cart-btn__icon" aria-hidden="true">
+                <svg class="cart-btn__svg" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6.75 9.45h13.5v12.15a2.25 2.25 0 0 1-2.25 2.25h-9a2.25 2.25 0 0 1-2.25-2.25V9.45Z"
+                    stroke="currentColor"
+                    stroke-width="1.15"
+                    stroke-linejoin="miter"
+                  ></path>
+                  <path
+                    d="M7.65 9.45V7.65c0-2.48 2.02-4.5 4.5-4.5h1.5c2.48 0 4.5 2.02 4.5 4.5v1.8"
+                    stroke="currentColor"
+                    stroke-width="1.15"
+                    stroke-linecap="round"
+                  ></path>
+                  <path d="M8.1 9.45h10.8" stroke="currentColor" stroke-width="1"></path>
+                  <path
+                    d="M10.35 14.85Q13.5 17.55 16.65 14.85"
+                    stroke="currentColor"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                  ></path>
+                </svg>
+              </span>
+              <span class="cart-btn__badge">1</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <main class="product-content">
+        <p class="product-back">
+          <a href="index.html#collection">‹ Вернуться в каталог</a>
+        </p>
+
+        <div class="product-detail">
+          <fieldset class="product-gallery">
+            <legend class="visually-hidden">Фотографии товара</legend>
+
+            <div class="product-gallery__stage">
+              <img
+                class="product-gallery__photo product-gallery__photo--1"
+                src="https://www.figma.com/api/mcp/asset/e2a9dcc3-823d-4a1a-8982-968d482584d1"
+                alt="Кольцо Полночь, общий вид"
+                width="497"
+                height="470"
+                decoding="async"
+              >
+              <img
+                class="product-gallery__photo product-gallery__photo--2"
+                src="https://www.figma.com/api/mcp/asset/769de570-0e11-46b8-9743-924f9b5cddd4"
+                alt="Кольцо Полночь, ракурс 2"
+                width="497"
+                height="470"
+                decoding="async"
+              >
+              <img
+                class="product-gallery__photo product-gallery__photo--3"
+                src="https://www.figma.com/api/mcp/asset/9525b040-ea1b-4326-ad88-2c36254daa34"
+                alt="Кольцо Полночь, ракурс 3"
+                width="497"
+                height="470"
+                decoding="async"
+              >
+            </div>
+
+            <div class="product-gallery__thumbs">
+              <div class="product-gallery__pick">
+                <input type="radio" name="product-shot" id="shot-1" class="product-gallery__radio" checked>
+                <label for="shot-1" class="product-gallery__thumb">
+                  <img src="https://www.figma.com/api/mcp/asset/e2a9dcc3-823d-4a1a-8982-968d482584d1" alt="" decoding="async">
+                </label>
+              </div>
+              <div class="product-gallery__pick">
+                <input type="radio" name="product-shot" id="shot-2" class="product-gallery__radio">
+                <label for="shot-2" class="product-gallery__thumb">
+                  <img src="https://www.figma.com/api/mcp/asset/769de570-0e11-46b8-9743-924f9b5cddd4" alt="" decoding="async">
+                </label>
+              </div>
+              <div class="product-gallery__pick">
+                <input type="radio" name="product-shot" id="shot-3" class="product-gallery__radio">
+                <label for="shot-3" class="product-gallery__thumb">
+                  <img src="https://www.figma.com/api/mcp/asset/9525b040-ea1b-4326-ad88-2c36254daa34" alt="" decoding="async">
+                </label>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="product-summary">
+            <header class="product-summary__header">
+              <h1 class="product-summary__title">Кольцо Полночь</h1>
+              <div class="product-summary__rule" aria-hidden="true"></div>
+              <p class="product-summary__price">
+                <span class="product-summary__price-num">45 000 </span><span class="product-summary__price-rub">₽</span>
+              </p>
+            </header>
+
+            <div class="product-summary__text">
+              <p>
+                Элегантное кольцо из серебра 925 пробы с черным ониксом. Создано вручную мастерами Noctis. Камень обработан
+              </p>
+              <p>методом кабошон, что придает изделию загадочное мерцание в свете луны.</p>
+            </div>
+
+            <section class="product-summary__block" aria-labelledby="material-label">
+              <h2 class="product-summary__label" id="material-label">Материал</h2>
+              <p class="product-summary__value">Серебро 925, Черный оникс</p>
+            </section>
+
+            <div class="product-summary__block product-summary__block--sizes">
+              <h2 class="product-summary__label" id="size-label">Размер</h2>
+              <div class="product-sizes" role="radiogroup" aria-labelledby="size-label">
+                <div class="product-sizes__item">
+                  <input type="radio" name="product-size" id="size-s" class="product-sizes__radio visually-hidden" value="S">
+                  <label for="size-s" class="size-chip">S</label>
+                </div>
+                <div class="product-sizes__item">
+                  <input type="radio" name="product-size" id="size-m" class="product-sizes__radio visually-hidden" value="M" checked>
+                  <label for="size-m" class="size-chip">M</label>
+                </div>
+                <div class="product-sizes__item">
+                  <input type="radio" name="product-size" id="size-l" class="product-sizes__radio visually-hidden" value="L">
+                  <label for="size-l" class="size-chip">L</label>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="btn-cart">Добавить в корзину</button>
+
+            <ul class="product-perks">
+              <li>Ручная работа</li>
+              <li>Бесплатная доставка по России</li>
+              <li>Гарантия качества</li>
+              <li>Возврат в течение 14 дней</li>
+            </ul>
+          </div>
+        </div>
+
+        <section class="product-suggest" aria-labelledby="suggest-title">
+          <h2 id="suggest-title" class="product-suggest__title">Возможно, вас заинтересует</h2>
+          <div class="product-suggest__grid">
+            <article class="product-card product-card--compact">
+              <a class="product-card__link" href="product.html">
+                <div class="product-card__media">
+                  <img
+                    src="https://www.figma.com/api/mcp/asset/e2a9dcc3-823d-4a1a-8982-968d482584d1"
+                    alt="Кольцо Полночь на бархатной подушке"
+                    width="546"
+                    height="517"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </div>
+                <span class="product-card__cta" aria-hidden="true">Посмотреть</span>
+                <h3 class="product-card__name">Кольцо Полночь</h3>
+                <p class="product-card__price">45 000 ₽</p>
+              </a>
+            </article>
+            <article class="product-card product-card--compact">
+              <a class="product-card__link" href="product.html">
+                <div class="product-card__media">
+                  <img
+                    src="https://www.figma.com/api/mcp/asset/769de570-0e11-46b8-9743-924f9b5cddd4"
+                    alt="Колье Луна на бархатной подушке"
+                    width="546"
+                    height="517"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </div>
+                <span class="product-card__cta" aria-hidden="true">Посмотреть</span>
+                <h3 class="product-card__name">Колье Луна</h3>
+                <p class="product-card__price">25 000 ₽</p>
+              </a>
+            </article>
+            <article class="product-card product-card--compact">
+              <a class="product-card__link" href="product.html">
+                <div class="product-card__media">
+                  <img
+                    src="https://www.figma.com/api/mcp/asset/9525b040-ea1b-4326-ad88-2c36254daa34"
+                    alt="Браслет Новолуние на бархатной подушке"
+                    width="546"
+                    height="517"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </div>
+                <span class="product-card__cta" aria-hidden="true">Посмотреть</span>
+                <h3 class="product-card__name">Браслет Новолуние</h3>
+                <p class="product-card__price">36 000 ₽</p>
+              </a>
+            </article>
+            <article class="product-card product-card--compact">
+              <a class="product-card__link" href="product.html">
+                <div class="product-card__media">
+                  <img
+                    src="https://www.figma.com/api/mcp/asset/df2f1224-239a-4e9d-b2c5-0dded83d96c9"
+                    alt="Браслет Полнолуние на бархатной подушке"
+                    width="546"
+                    height="517"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </div>
+                <span class="product-card__cta" aria-hidden="true">Посмотреть</span>
+                <h3 class="product-card__name">Браслет Полнолуние</h3>
+                <p class="product-card__price">33 000 ₽</p>
+              </a>
+            </article>
+          </div>
+        </section>
+
+        <footer class="site-footer site-footer--product">
+          <div class="site-footer__shell">
+            <div class="site-footer__main">
+              <div class="site-footer__cols">
+                <div class="site-footer__brand">
+                  <p class="logo logo--footer">NOCTIS</p>
+                  <p class="site-footer__tagline">
+                    Ювелирные изделия тьмы. Откройте для себя коллекцию украшений, созданных в атмосфере готической роскоши.
+                  </p>
+                </div>
+                <div class="site-footer__col site-footer__col--nav">
+                  <h3 class="site-footer__heading site-footer__heading--spaced">Навигация</h3>
+                  <ul class="footer-nav">
+                    <li class="footer-nav__item"><a href="index.html">Главная</a></li>
+                    <li class="footer-nav__item"><a href="catalog.html">Каталог</a></li>
+                    <li class="footer-nav__item"><a href="index.html#about">О бренде</a></li>
+                    <li class="footer-nav__item"><a href="index.html#contacts">Контакты</a></li>
+                  </ul>
+                </div>
+                <div class="site-footer__col site-footer__col--contact">
+                  <h3 class="site-footer__heading site-footer__heading--spaced">Контакты</h3>
+                  <ul class="footer-contact">
+                    <li>Москва, Кузнецкий Мост, 21/5</li>
+                    <li><a href="tel:+74951234567">+7 (495) 123-45-67</a></li>
+                    <li><a href="mailto:contact@noctis.luxury">contact@noctis.luxury</a></li>
+                  </ul>
+                </div>
+                <div class="site-footer__col site-footer__col--news">
+                  <p class="site-footer__newsletter-title">Подпишись на рассылку и получи скидку 10%</p>
+                  <form class="newsletter-form" action="#" method="post">
+                    <label class="newsletter-form__field-label" for="product-footer-email">Email</label>
+                    <input
+                      class="newsletter-form__input"
+                      type="email"
+                      id="product-footer-email"
+                      name="email"
+                      autocomplete="email"
+                      aria-label="Email для рассылки"
+                    >
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="site-footer__rule-block">
+              <p class="site-footer__copyright">© 2025 Noctis. Все права защищены.</p>
+            </div>
+          </div>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>
