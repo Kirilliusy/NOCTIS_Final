@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOCTIS — Ювелирные изделия тьмы</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="page-wrap">
+      <header class="site-header">
+        <div class="site-header__frame">
+          <div class="site-header__row">
+            <a href="index.html" class="logo logo--header">NOCTIS</a>
+            <nav class="nav-main" aria-label="Основная навигация">
+              <div class="nav-main__cluster">
+                <a href="index.html" class="nav-btn nav-btn--active">
+                  <span class="nav-btn__label">Главная</span>
+                  <span class="nav-btn__rule" aria-hidden="true">
+                    <img src="https://www.figma.com/api/mcp/asset/cc02644f-23dc-4ad0-8f4f-004d4a5ac022" alt="" width="1" height="1">
+                  </span>
+                </a>
+                <a href="catalog.html" class="nav-btn">
+                  <span class="nav-btn__label">Каталог</span>
+                </a>
+                <a href="#about" class="nav-btn">
+                  <span class="nav-btn__label">О нас</span>
+                </a>
+                <a href="#contacts" class="nav-btn nav-btn--contacts">
+                  <span class="nav-btn__label">Контакты</span>
+                </a>
+              </div>
+            </nav>
+            <a href="cart.html" class="cart-btn" aria-label="Корзина">
+              <span class="cart-btn__icon" aria-hidden="true">
+                <svg class="cart-btn__svg" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6.75 9.45h13.5v12.15a2.25 2.25 0 0 1-2.25 2.25h-9a2.25 2.25 0 0 1-2.25-2.25V9.45Z"
+                    stroke="currentColor"
+                    stroke-width="1.15"
+                    stroke-linejoin="miter"
+                  ></path>
+                  <path
+                    d="M7.65 9.45V7.65c0-2.48 2.02-4.5 4.5-4.5h1.5c2.48 0 4.5 2.02 4.5 4.5v1.8"
+                    stroke="currentColor"
+                    stroke-width="1.15"
+                    stroke-linecap="round"
+                  ></path>
+                  <path d="M8.1 9.45h10.8" stroke="currentColor" stroke-width="1"></path>
+                  <path
+                    d="M10.35 14.85Q13.5 17.55 16.65 14.85"
+                    stroke="currentColor"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                  ></path>
+                </svg>
+              </span>
+              <span class="cart-btn__badge">1</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <main class="page-flow">
+        <div class="page-stack">
+          <section class="hero">
+            <div
+              class="hero__bg"
+              style="background-image: url('https://www.figma.com/api/mcp/asset/b51bd804-0bd5-4da2-9664-b6c4cb7843f0')"
+            ></div>
+            <div class="hero__overlay"></div>
+            <div class="hero__stage">
+              <div class="hero__inner">
+                <div class="hero__divider" aria-hidden="true"></div>
+                <h1 class="hero__title">NOCTIS</h1>
+                <div class="hero__subtitle-wrap">
+                  <p class="hero__subtitle">Ювелирные изделия тьмы</p>
+                </div>
+                <div class="hero__text">
+                  <p>Откройте для себя коллекцию изысканных украшений, созданных в атмосфере</p>
+                  <p>готической роскоши. Каждое изделие — это симфония тьмы и света, созданная для тех,</p>
+                  <p>кто ценит вечную красоту.</p>
+                </div>
+                <a href="#collection" class="btn btn--hero">ОТКРЫТЬ КОЛЛЕКЦИЮ</a>
+              </div>
+            </div>
+          </section>
+
+          <section class="collection" id="collection">
+            <div class="collection__intro">
+              <div class="collection__heading-wrap">
+                <h2 class="collection__heading">КОЛЛЕКЦИЯ</h2>
+              </div>
+              <div class="collection__rule" aria-hidden="true"></div>
+              <div class="collection__lead-wrap">
+                <p class="collection__lead">Избранные изделия из нашей эксклюзивной коллекции</p>
+              </div>
+            </div>
+            <div class="product-grid">
+              <article class="product-card">
+                <a class="product-card__link" href="product.html">
+                  <div class="product-card__media">
+                    <img
+                      src="https://www.figma.com/api/mcp/asset/dc955d35-e7cf-44ee-9261-8eaf814c446a"
+                      alt="Кольцо Полночь на бархатной подушке"
+                      width="546"
+                      height="517"
+                      loading="lazy"
+                    >
+                  </div>
+                  <span class="product-card__cta" aria-hidden="true">Посмотреть</span>
+                  <h3 class="product-card__name">Кольцо Полночь</h3>
+                  <p class="product-card__price">45 000 ₽</p>
+                </a>
+              </article>
+              <article class="product-card">
+                <a class="product-card__link" href="product.html">
+                  <div class="product-card__media">
+                    <img
+                      src="https://www.figma.com/api/mcp/asset/97f66ef1-2a22-4825-a429-970335e000cb"
+                      alt="Колье Ночь на бархатной подушке"
+                      width="546"
+                      height="517"
+                      loading="lazy"
+                    >
+                  </div>
+                  <span class="product-card__cta" aria-hidden="true">Посмотреть</span>
+                  <h3 class="product-card__name">Колье Ночь</h3>
+                  <p class="product-card__price">32 000 ₽</p>
+                </a>
+              </article>
+            </div>
+            <div class="collection__actions">
+              <a href="catalog.html" class="btn btn--catalog">СМОТРЕТЬ ВСЕ</a>
+            </div>
+          </section>
+
+          <section class="about" id="about">
+            <div class="about__row">
+              <div class="about__copy">
+                <div class="about__intro">
+                  <div class="about__heading-wrap">
+                    <h2 class="about__heading">О БРЕНДЕ</h2>
+                    <div class="about__rule" aria-hidden="true"></div>
+                  </div>
+                </div>
+                <div class="about__body">
+                  <p class="about__para about__para--lead">
+                    <span class="about__brand">Noctis</span>
+                    — это не просто украшения. Это воплощение тёмной элегантности и вечной красоты, созданное для тех, кто не боится выделяться из толпы.
+                  </p>
+                  <div class="about__block">
+                    <p>Каждое изделие нашей коллекции создаётся вручную мастерами ювелирного искусства, которые черпают вдохновение в</p>
+                    <p>готической архитектуре, таинственных ночных пейзажах и магии лунного света.</p>
+                  </div>
+                  <div class="about__block">
+                    <p>Мы используем только благородные металлы и натуральные камни, создавая украшения, которые станут вашими спутниками на</p>
+                    <p>долгие годы.</p>
+                  </div>
+                </div>
+                <div class="about__stats">
+                  <div class="stat-box stat-box--a">
+                    <span class="stat-box__value stat-box__value--cinzel-lg">100%</span>
+                    <span class="stat-box__label">Ручная работа</span>
+                  </div>
+                  <div class="stat-box stat-box--b">
+                    <span class="stat-box__value stat-box__value--cinzel-md">925</span>
+                    <span class="stat-box__label">Проба серебра</span>
+                  </div>
+                  <div class="stat-box stat-box--c">
+                    <span class="stat-box__value stat-box__value--infinity">∞</span>
+                    <span class="stat-box__label">Гарантия качества</span>
+                  </div>
+                </div>
+              </div>
+              <div class="about__visual">
+                <img
+                  src="https://www.figma.com/api/mcp/asset/abb02774-49e7-4e5d-ba2e-134aeeb023f7"
+                  alt="Модель в украшениях NOCTIS"
+                  width="500"
+                  height="500"
+                  loading="lazy"
+                >
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <footer class="site-footer" id="contacts">
+          <div class="site-footer__shell">
+            <div class="site-footer__main">
+              <div class="site-footer__cols">
+                <div class="site-footer__brand">
+                  <p class="logo logo--footer">NOCTIS</p>
+                  <p class="site-footer__tagline">
+                    Ювелирные изделия тьмы. Откройте для себя коллекцию украшений, созданных в атмосфере готической роскоши.
+                  </p>
+                </div>
+                <div class="site-footer__col site-footer__col--nav">
+                  <h3 class="site-footer__heading site-footer__heading--spaced">Навигация</h3>
+                  <ul class="footer-nav">
+                    <li class="footer-nav__item"><span class="footer-nav__text">Главная</span></li>
+                    <li class="footer-nav__item"><a href="catalog.html">Каталог</a></li>
+                    <li class="footer-nav__item"><a href="#about">О бренде</a></li>
+                    <li class="footer-nav__item"><a href="#contacts">Контакты</a></li>
+                  </ul>
+                </div>
+                <div class="site-footer__col site-footer__col--contact">
+                  <h3 class="site-footer__heading site-footer__heading--spaced">Контакты</h3>
+                  <ul class="footer-contact">
+                    <li>Москва, Кузнецкий Мост, 21/5</li>
+                    <li><a href="tel:+74951234567">+7 (495) 123-45-67</a></li>
+                    <li><a href="mailto:contact@noctis.luxury">contact@noctis.luxury</a></li>
+                  </ul>
+                </div>
+                <div class="site-footer__col site-footer__col--news">
+                  <p class="site-footer__newsletter-title">Подпишись на рассылку и получи скидку 10%</p>
+                  <form class="newsletter-form" action="#" method="post">
+                    <label class="newsletter-form__field-label" for="footer-email">Email</label>
+                    <input
+                      class="newsletter-form__input"
+                      type="email"
+                      id="footer-email"
+                      name="email"
+                      autocomplete="email"
+                      aria-label="Email для рассылки"
+                    >
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="site-footer__rule-block">
+              <p class="site-footer__copyright">© 2025 Noctis. Все права защищены.</p>
+            </div>
+          </div>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>
